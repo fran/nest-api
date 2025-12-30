@@ -1,0 +1,9 @@
+services:
+  db:
+    image: mongo:latest
+    restart: always
+    container_name: pokedex-db
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo:/data/db
